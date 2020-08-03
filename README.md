@@ -71,7 +71,7 @@ npm start
 Patient Cloud uses environment variables for configuration. Here is a list of all variables:
 
 | Variable      | Description |
-| ----------- | ----------- |
+| :---  | :---  |
 | NODE_ENV      | Set to `development` or `production`       |
 | DB_URL   | Database connection URL. Example: `mysql://login:password@host:3306/dbname` |
 | EMAIL_TRANSPORT_URL   | SMTP connection URL for sending mails. Example: `smtps://login:password@email-smtp.eu-central-1.amazonaws.com` |
