@@ -14,7 +14,7 @@ With [Docker Compose](https://docs.docker.com/compose/install/) you can easily c
 
 Example `docker-compose.yml` with MariaDB:
 
-```markdown
+```Dockerfile
 version: '3'
 services:
   patientcloud:
@@ -95,13 +95,13 @@ Basically it takes two steps to authenticate a user from at your frontend:
 
 Login button example:
 
-```markdown
+```html
 <a href="http://localhost/auth/nhs-login">NHS Login</a>
 ```
 
 Successful login endpoint. Next.js React example:
 
-```markdown
+```jsx
 import { useRouter } from 'next/router';
 import jwt from 'jsonwebtoken';
 
