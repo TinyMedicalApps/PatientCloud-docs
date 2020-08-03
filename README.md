@@ -2,14 +2,16 @@
 
 Patient Cloud is being designed by Tiny Medical Apps to improve the developer experience when connecting to NHS APIs such as NHS Login and FHIR Services.
 It is a thin microservice nodejs architecture (using NestJS). Initially connecting to NHS Login Sandpit and FHIR enabled synthetic servers.
-On our roadmap is
-# [NHS Login:checked]
-# [FHIR Server Proxy:unchecked]
-# [GraphQL warapper for FHIR APIs:unchecked]
-# [National Event Managemnt Service (NEMS):unchecked]
-# [National Record Locator (NRL):unchecked]
-# [NHS Directory of Services:unchecked]
-# [NHS Content:unchecked]
+On our roadmap is:
+
+- [x] NHS Login
+- [ ] FHIR Server Proxy
+- [ ] GraphQL warapper for FHIR APIs
+- [ ] National Event Managemnt Service (NEMS)
+- [ ] National Record Locator (NRL)
+- [ ] NHS Directory of Services
+- [ ] NHS Content
+
 
 ## Getting started on local machine
 
