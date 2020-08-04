@@ -12,7 +12,6 @@ Patient Cloud is being designed by Tiny Medical Apps to improve the developer ex
 * [ ] NHS Directory of Services
 * [ ] NHS Content
 
-
 ## NHS Login button on a front end client and showing the logged in user
 
 Basically it takes two steps to authenticate a user from at your frontend: 1. Redirect user to authentication endpoint `http://localhost/auth/nhs-login` 2. Receive a JWT token on frontend's URL `/users/login-success/JWT_TOKEN` or in case of error `/users/login-failure` will be called.

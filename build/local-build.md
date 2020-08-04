@@ -57,7 +57,7 @@ docker-compose up -d
    npm install
    ```
 
-4. Configure Patient Cloud environment variables and database. Check [Patient Cloud Configuration](./#configuration) chapter.
+4. Configure Patient Cloud environment variables and database. Check [Patient Cloud Configuration](https://github.com/TinyMedicalApps/PatientCloud-docs/tree/7fdfbb3860a45eaf8fddff03c7c3d3308b1c1cdd/containers/README.md#configuration) chapter.
 5. Run Patient Cloud
 
    ```text
@@ -83,3 +83,4 @@ Patient Cloud uses environment variables for configuration. Here is a list of al
 | NHS\_OPEN\_ID\_CLIENT\_SCOPE | NHS OpenID scope `openid profile` |
 | NHS\_OPEN\_ID\_CLIENT\_KEY | NHS OpenID private key `private_key.pem` The key located at `/common/keys` directory |
 | NHS\_OPEN\_ID\_CLIENT\_REDIRECT\_URI | NHS OpenID redirect URL `http://localhost/auth/nhs-callback` Backend NHS callback process endpoint. |
+
