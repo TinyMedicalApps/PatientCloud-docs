@@ -12,9 +12,9 @@ Patient Cloud is being designed by Tiny Medical Apps to improve the developer ex
 * [ ] NHS Directory of Services
 * [ ] NHS Content
 
-
 ## Documentation
 
-Full Documentation is here 
+Full Documentation is here
 
-https://docs.patientcloud.ai/
+[https://docs.patientcloud.ai/](https://docs.patientcloud.ai/)
+

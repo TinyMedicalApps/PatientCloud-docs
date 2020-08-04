@@ -44,3 +44,4 @@ const WithStaticProps = () => {
 
 export default WithStaticProps;
 ```
+

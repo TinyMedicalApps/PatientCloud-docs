@@ -26,3 +26,7 @@
 
 * [NHS Login](nhs/nhs-login.md)
 
+## GraphQL
+
+* [Playground](graphql/playground.md)
+
