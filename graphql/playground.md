@@ -16,7 +16,7 @@ GraphQL Playground
 {% endtab %}
 
 {% tab title="" %}
-{% embed url="https://www.graphqlbin.com/v2/6RQ6TM" %}
+{% embed url="https://codepen.io/cheapsteak/full/eQQPab" %}
 {% endtab %}
 {% endtabs %}
 
