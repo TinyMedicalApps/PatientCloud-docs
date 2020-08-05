@@ -30,3 +30,9 @@
 
 * [Playground](graphql/playground.md)
 
+## Testing
+
+* [Unit Tests](testing/unit-tests.md)
+* [Integration Tests](testing/integration-tests.md)
+* [End to End tests](testing/end-to-end-tests.md)
+
