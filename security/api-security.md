@@ -2,7 +2,7 @@
 
 ## JWT
 
-Java Web Tokens are used to get access to secured endpoints and extracted from Authorization's Bearer header.
+JSON Web Tokens are used to get access to secured endpoints and extracted from Authorization's Bearer header.
 
 **Configuration**
 
@@ -51,4 +51,4 @@ Roles guard used to protect an endpoint by user role. We can use it as a authori
 | `google.strategy.ts`   | Google OAuth   |
 | `linkedin.strategy.ts` | LinkedIn OAuth |
 | `oidc.strategy.ts`     | OpenID Connect |
-| `jwt.strategy.ts`      | Java Web Token |
+| `jwt.strategy.ts`      | JSON Web Token |
