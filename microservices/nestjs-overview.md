@@ -7,6 +7,7 @@
 We use TypeORM as an ORM. UUID used in every table, it takes more space then integer AUTOINCREMENT field, but it allows us better scalabilty and we can build domain entities with primary key which we can generate ourselves. There is no database preference in the code any SQL database can be used.
 
 **Configuration**
+
 TypeORM configuration initialized in `src/app.module.ts` file:
 |Variable|Description|
 |:--|:--|
@@ -43,3 +44,12 @@ NestJSX Crud is used for simple CRUD operations. It is very powerful library wit
 ### Nodemailer
 
 Email notifications are using Nodemailer library through `@nest-modules/mailer` wrapper. Handlebars template engine for email templates.
+
+**Configuration**
+
+Email settings are set in environment variables and initilized in `src/app.module.ts` file.
+
+| Variable     | Description                       |
+| :----------- | :-------------------------------- |
+| transport    | Connection URL                    |
+| template.dir | Full path to Handlebars templates |
