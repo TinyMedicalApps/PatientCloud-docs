@@ -13,6 +13,8 @@ version: '3'
 services:
   patientcloud:
     image: tinymedicalapps/patientcloud
+    volumes:
+      - google.credentials.json:/config/google.credentials.json
     environment:
       - DB_URL=mysql://patientcloud:patientcloud@db:3306/patientcloud
       - NODE_PORT=80
@@ -26,6 +28,7 @@ services:
       - NHS_OPEN_ID_CLIENT_KEY=private_key.pem
       - NHS_OPEN_ID_CLIENT_REDIRECT_URI=http://localhost/auth/nhs-callback
       - SESSION_SECRET=your_session_secret_key_add_your_own
+      - GOOGLE_APPLICATION_CREDENTIALS=/config/google.credentials.json
   db:
     image: mariadb:10.5
     volumes:
@@ -93,3 +96,4 @@ Patient Cloud uses environment variables for configuration. Here is a list of al
 | NHS_OPEN_ID_CLIENT_SCOPE        | NHS OpenID scope `openid profile`                                                                              |
 | NHS_OPEN_ID_CLIENT_KEY          | NHS OpenID private key `private_key.pem` The key located at `/common/keys` directory                           |
 | NHS_OPEN_ID_CLIENT_REDIRECT_URI | NHS OpenID redirect URL `http://localhost/auth/nhs-callback` Backend NHS callback process endpoint.            |
+| GOOGLE_APPLICATION_CREDENTIALS  | Full path on local file system to Google application credentials, e.g.: /config/google.credentials.json        |
