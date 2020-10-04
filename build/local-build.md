@@ -90,6 +90,7 @@ Patient Cloud uses environment variables for configuration. Here is a list of al
 | NODE_PORT                       | Running port: `80`                                                                                             |
 | JWT_SECRET                      | JSON Web Token secret key string.                                                                              |
 | FRONTEND_URL                    | Front end URL. Used for user registration activation, password recovery and oAuth redirect.                    |
+| SENTRY_DSN                      | https://sentry.io connection URL                                                                               |
 | NHS_OPEN_ID_ENDPOINT            | NHS OpenID endpoint. `https://auth.sandpit.signin.nhs.uk` for sandbox.                                         |
 | NHS_OPEN_ID_CLIENT_ID           | NHS OpenID clientId `digital-health-passport`                                                                  |
 | NHS_OPEN_ID_CLIENT_PASSWORD     | NHS OpenID password `dummy`                                                                                    |
