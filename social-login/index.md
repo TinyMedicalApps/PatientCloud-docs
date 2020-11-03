@@ -90,3 +90,52 @@ const data = fetch('https://sandpit.patientcloud.ai/auth/test', {
       .catch(error => console.error(error));
   };
 ```
+
+## Getting Google Identity authorization through NestJS's social login
+
+Redirect user to NestJS social endpoints to get Google Identity custom token.
+
+| Social Network | API endpoint      |
+| :------------- | :---------------- |
+| Google         | `/auth/google`    |
+| LinkedIn       | `/auth/linkedin`  |
+| Facebook       | `/auth/facebook`  |
+| NHS            | `/auth/nhs-login` |
+
+After successful registration FRONTEND_URL will be called with GI custom token in URL. You need to use the token to get GI authorization on frontend app.
+
+### Google Identity custom token authorization example
+
+Let's set our FRONTEND_URL to https://example.com. After successful authentication https://example.com/users/login-success/CUSTOM_TOKEN will be called. In case of failure https://example.com/users/login-failure will be called.
+
+```html
+<script src="https://www.gstatic.com/firebasejs/7.19.0/firebase.js"></script>
+<script>
+  var config = {
+    apiKey: 'YOUR_API_KEY_SECRET',
+    authDomain: 'YOUR_AUTH_DOMAIN',
+  };
+  firebase.initializeApp(config);
+
+  firebase.auth().onAuthStateChanged(function (user) {
+    if (user) {
+      document.getElementById('message').innerHTML = 'Welcome, ' + user.email;
+    } else {
+      document.getElementById('message').innerHTML = 'No user signed in.';
+    }
+  });
+
+  //token - this is the token we get from NestJS. The CUSTOM_TOKEN from URL
+  firebase.auth().signInWithCustomToken(token).catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+```
+
+### Google Identity custom token workflow
+
+1. NestJS obtains user information from oAuth token and looks for email in backend database, if no email found the new user will be added to database and to Google Identity.
+2. NestJS sends back to frontend Google Identity token
+3. Frontend uses the token to authenticate itself.
