@@ -98,3 +98,5 @@ Patient Cloud uses environment variables for configuration. Here is a list of al
 | NHS_OPEN_ID_CLIENT_KEY          | NHS OpenID private key `private_key.pem` The key located at `/common/keys` directory                           |
 | NHS_OPEN_ID_CLIENT_REDIRECT_URI | NHS OpenID redirect URL `http://localhost/auth/nhs-callback` Backend NHS callback process endpoint.            |
 | GOOGLE_APPLICATION_CREDENTIALS  | Full path on local file system to Google application credentials, e.g.: /config/google.credentials.json        |
+| SENTRY_DSN                      | Sentry.io connection URL e.g. https://xxxxxxxxxxxxx@o123123.ingest.sentry.io/1231233                           |
+| TRAILS_URL                      | Trails audit connection URL e.g.: https://1.1.1.1:8080                                                         |
