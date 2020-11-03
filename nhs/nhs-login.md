@@ -1,5 +1,9 @@
 # NHS Login
 
+## NHS OpenID Connect scope
+
+There is no email scope available on NHS OpenID Connect by default. You have to ask support to enable it.
+
 ## NHS Login button on a front end client and showing the logged in user
 
 Basically it takes two steps to authenticate a user from at your frontend: 1. Redirect user to authentication endpoint `http://localhost/auth/nhs-login` 2. Receive a JWT token on frontend's URL `/users/login-success/JWT_TOKEN` or in case of error `/users/login-failure` will be called.
@@ -44,4 +48,3 @@ const WithStaticProps = () => {
 
 export default WithStaticProps;
 ```
-
